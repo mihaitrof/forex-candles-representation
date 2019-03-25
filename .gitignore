@@ -1,0 +1,7 @@
+data/
+logs/
+unprocessed_data/
+venv/
+.idea/
+__pycache__/
+forex.pem

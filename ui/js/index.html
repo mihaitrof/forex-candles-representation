@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>JSON and AJAX</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<!-- <header> -->
+		<ul id="menu">
+			<button id="eurusd" class="parity">EUR/USD</button>
+			<button id="audusd" class="parity">AUD/USD</button>
+			<button id="usdjpy" class="parity">USD/JPY</button>
+			<button id="audchf" class="parity">AUD/CHF</button>
+			<button id="chfjpy" class="parity">CHF/JPY</button>
+			<button id="gbpusd" class="parity">GBP/USD</button>
+			<button id="usdcad" class="parity">USD/CAD</button>
+		</ul>
+	<!-- </header> -->
+
+		 <ul id="nav">
+		  <li><a href="#">Timeframes</a>
+		    <ul id='timeframe_label'>
+		      <li><a id='t1'  href="#">M1</a></li>
+		      <li><a id='t5'' href="#">M5</a></li>
+		      <li><a id='t15' href="#">M15</a></li>
+		      <li><a id='t30' href="#">M30</a></li>
+		      <li><a id='t60' href="#">H1</a></li>
+		      <li><a id='t240' href="#">H4</a></li>
+		      <li><a id='t1440' href="#">D1</a></li>
+		      <li><a id='t10080' href="#">W</a></li>
+		      <li><a id='t43200' href="#">M</a></li>
+		    </ul>
+		  </li>
+		  <li><a href="#">Candlesticks</a>
+		    <ul id='candlesticks_label'>
+		      <li><a id='spinning_top' href="#">Spinning-top</a></li>
+		      <li><a id='doji' href="#">Doji</a></li>
+		      <li><a id='long_legged_doji' href="#">Long legged doji</a></li>
+		      <li><a id='dragonfly_doji' href="#">Dragonfly doji</a></li>
+		      <li><a id='gravestone_doji' href="#">Gravestone doji</a></li>
+		      <li><a id='marubozu' href="#">Marubozu</a></li>
+		      <li><a id='hammer' href="#">Hammer</a></li>
+		      <li><a id='hanging_man' href="#">Hanging man</a></li>
+		      <li><a id='inverted_hammer' href="#">Inverted hammer</a></li>
+		      <li><a id='shooting_star' href="#">Shooting star</a></li>
+		      <!--  -->
+		      <li><a id='bullish_engulfing' href="#">Bullish engulfing</a></li>
+		      <li><a id='bearish_engulfing' href="#">Bearish engulfing</a></li>
+		      <li><a id='tweezer_tops' href="#">Tweezer tops</a></li>
+		      <li><a id='tweezer_bottoms' href="#">Tweezer bottoms</a></li>
+		      <li><a id='morning_star' href="#">Morning star</a></li>
+		      <li><a id='evening_star' href="#">Evening star</a></li>
+		      <li><a id='three_white_soldiers' href="#">Three white soldiers</a></li>
+		      <li><a id='three_black_crows' href="#">Three black crows</a></li>
+		      <li><a id='three_inside_up' href="#">Three inside up</a></li>
+		      <li><a id='three_inside_down' href="#">Three inside down</a></li>
+		    </ul>
+		  </li>
+		  <li><a href="#">Trends</a>
+		    <ul id='trends_label'>
+		      <li><a id='uptrend' href="#">Uptrend</a></li>
+		      <li><a id='downtrend' href="#">Downtrend</a></li>
+		    </ul>
+		  </li>
+		  <!-- <li><a href="#">Figures</a>
+		    <ul>
+		      <li id='up_triangle'><a href="#">Uptrend triangle</a></li>
+		      <li id='down_triangle'><a href="#">Downtrend triangle</a></li>
+		      <li id='symmetric_triangle'><a href="#">Symmetric triangle</a></li>
+		      <li id='flag'><a href="#">Flag</a></li>
+		      <li id='pennant'><a href="#">Pennant</a></li>
+		    </ul>
+		  </li> -->
+		  <li><a href="#">Inverse</a>
+		    <ul id='inverse'>
+		      <li><a  id='up' href="#">Up</a></li>
+		      <li><a  id='down' href="#">Down</a></li>
+		    </ul>
+		  </li>
+		  <li id='fundamental'><a href="#">Fundamental analysis</a>
+		  	<!-- <ul id='fundamental'></ul> -->
+		  </li>
+		  <li id='elliot'><a href="#">Elliot waves</a>
+		  </li>
+		  <li id='level_line'><a href="#">Level lines</a>
+		  </li>
+		  <li id='simulation'><a href="#">Simulation</a>
+		  </li>
+		</ul>
+
+	
+
+	<div id="animal-info"></div>
+
+	<div id="scrolling-thing" style="width:1300px; height: 400px;">
+		<div id="chartContainer" style="height: 570px; margin: 0px auto; overflow-x: hidden;"></div>
+	</div>
+
+	<div id="zoom">
+		<button class="back">Zoom</button>
+	</div>
+
+	<div id="mybutton">
+		<button class="back">Back to start</button>
+	</div>
+
+	<div id="back">
+		<button class="back">Back</button>
+	</div>
+
+	<div id="next">
+		<button class="back">Next</button>
+	</div>
+
+	<div id="end">
+		<button class="back">End</button>
+	</div>
+	<div id="status">
+		<p>Starting...</p>
+	</div>
+
+
+	<script src="../canvasjs.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
